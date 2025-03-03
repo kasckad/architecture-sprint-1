@@ -1,0 +1,6 @@
+@import url('../../shared/vendor/normalize.css');
+@import url('../../shared/vendor/fonts.css');
+@import url('../../shared/blocks/page/page.css');
+@import url('../../shared/blocks/header/header.css');
+@import url('../../shared/blocks/footer/footer.css');
+@import url('./blocks/profile/profile.css');

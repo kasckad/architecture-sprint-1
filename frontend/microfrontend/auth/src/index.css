@@ -1,0 +1,3 @@
+@import url('../../shared/vendor/normalize.css');
+@import url('../../shared/vendor/fonts.css');
+@import url('./blocks/auth-form/auth-form.css');

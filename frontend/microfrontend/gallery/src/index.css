@@ -1,0 +1,10 @@
+@import url('../../shared/vendor/normalize.css');
+@import url('../../shared/vendor/fonts.css');
+@import url('../../shared/blocks/page/page.css');
+@import url('../../shared/blocks/header/header.css');
+@import url('../../shared/blocks/content/content.css');
+@import url('../../shared/blocks/footer/footer.css');
+@import url('./blocks/places/places.css');
+@import url('./blocks/card/card.css');
+@import url('../../shared/blocks/popup/popup.css');
+@import url('../../shared/blocks/popup/_is-opened/popup_is-opened.css');
