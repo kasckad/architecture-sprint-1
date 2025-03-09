@@ -119,4 +119,4 @@ JavaScript-фреймворки на одной странице
 ```
 
 # Задание 2.
-Ссылка на микросервисную архитектуру системы управления торговых площадок - 
+Ссылка на микросервисную архитектуру системы управления торговых площадок - [trading_platform_architecture](https://github.com/Ferret56/architecture-sprint-1/blob/sprint_1/trading_platform_architecture.drawio)
