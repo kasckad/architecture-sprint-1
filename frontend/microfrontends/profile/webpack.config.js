@@ -6,6 +6,7 @@ const Dotenv = require('dotenv-webpack');
 const deps = require("./package.json").dependencies;
 
 const printCompilationMessage = require('./compilation.config.js');
+const ProfilePopups = require("./src/components/ProfilePopups");
 
 module.exports = (_, argv) => ({
   output: {
@@ -65,7 +66,10 @@ module.exports = (_, argv) => ({
       name: "profile",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        './ProfileSection': './src/components/ProfileSection.js',
+        './ProfilePopups': './src/components/ProfilePopups.js',
+      },
       shared: {
         ...deps,
         react: {

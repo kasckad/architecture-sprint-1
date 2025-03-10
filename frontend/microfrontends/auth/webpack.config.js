@@ -65,7 +65,10 @@ module.exports = (_, argv) => ({
       name: "auth",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        './Login': './src/components/Login.js',
+        './Register': './src/components/Register.js',
+      },
       shared: {
         ...deps,
         react: {
