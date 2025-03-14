@@ -12,3 +12,4 @@ host - основное приложение
 shared-library - разделяемая библиотека хранящая единый контекст пользователя
 
 # Задание 2.
+https://drive.google.com/file/d/1C7b8n5BjM4Z0I3y7eWOfMb45CH3V1LFQ/view?usp=sharing
