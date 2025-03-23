@@ -1,6 +1,7 @@
 import React from 'react';
 import { CurrentUserContext } from '../contexts/CurrentUserContext';
 
+// Функция по отображению конкретного места с возможностью лайков
 function Card({ card, onCardClick, onCardLike, onCardDelete }) {
   const cardStyle = { backgroundImage: `url(${card.link})` };
 

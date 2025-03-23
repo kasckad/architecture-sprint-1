@@ -1,6 +1,7 @@
 import React from 'react';
 import PopupWithForm from './PopupWithForm';
 
+// Функция по смене каринки аватара
 function EditAvatarPopup({ isOpen, onUpdateAvatar, onClose }) {
   const inputRef = React.useRef();
 

@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Компонент просто отвечаюший за попап
 function PopupWithForm({
   title,
   name,

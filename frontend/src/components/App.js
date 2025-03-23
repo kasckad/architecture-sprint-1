@@ -16,6 +16,7 @@ import InfoTooltip from "./InfoTooltip";
 import ProtectedRoute from "./ProtectedRoute";
 import * as auth from "../utils/auth.js";
 
+// Основная функция для сборки приложения. Содержит все функции: Хедер, профиль, места
 function App() {
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] =
     React.useState(false);

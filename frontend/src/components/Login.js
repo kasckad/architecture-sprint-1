@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../blocks/login/login.css';
 
+// Функция с формой для логина
 function Login ({ onLogin }){
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');

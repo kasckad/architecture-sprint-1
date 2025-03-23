@@ -1,6 +1,7 @@
 import React from 'react';
 import PopupWithForm from './PopupWithForm';
 
+// Функция по добавлению нового Места через отдельную форму с вводом названия и сссылки на картинку
 function AddPlacePopup({ isOpen, onAddPlace, onClose }) {
   const [name, setName] = React.useState('');
   const [link, setLink] = React.useState('');

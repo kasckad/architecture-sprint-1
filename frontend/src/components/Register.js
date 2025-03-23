@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Компонент с регистрацией пользователя
 function Register ({ onRegister }){
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');

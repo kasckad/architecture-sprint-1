@@ -2,6 +2,7 @@ import React from 'react';
 import SuccessIcon from '../images/success-icon.svg';
 import ErrorIcon from '../images/error-icon.svg';
 
+// Функция по обработке сообщения об регистрации
 function InfoTooltip({ isOpen, onClose, status }) {
   const icon = status === 'success' ? SuccessIcon : ErrorIcon
   const text = status === 'success' ? "Вы успешно зарегистрировались" : 

@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Функция по открытию картинки в попап
 function ImagePopup({ card, onClose }) {
   return (
     <div className={`popup popup_type_image ${card ? 'popup_is-opened' : ''}`}>

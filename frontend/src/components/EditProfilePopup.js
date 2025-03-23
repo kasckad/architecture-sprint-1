@@ -2,6 +2,7 @@ import React from 'react';
 import PopupWithForm from './PopupWithForm';
 import { CurrentUserContext } from '../contexts/CurrentUserContext';
 
+// Функция по измению профиля пользователя
 function EditProfilePopup({ isOpen, onUpdateUser, onClose }) {
   const [name, setName] = React.useState('');
   const [description, setDescription] = React.useState('');
