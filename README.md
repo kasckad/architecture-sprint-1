@@ -28,3 +28,6 @@
 Проект полностью работоспособен и работает без ошибок.
 npm install, npm run build и npm start ошибок в консоли не выдают
 
+## * Задание 2
+Провел декомпозицию приложения. Построил новое решение на основе микросервисной архитектуры.
+Ссылка на файл: https://drive.google.com/file/d/1TYl_2YXXiuXFCPcx9GUQORSnH3HKGNw6/view?usp=sharing
