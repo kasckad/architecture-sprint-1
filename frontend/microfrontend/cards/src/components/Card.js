@@ -1,6 +1,7 @@
 import React from 'react';
 import api from "../utils/api";
 import {useSelector, useDispatch} from 'react-redux';
+import '../style/card/card.css'
 
 function Card({ card }) {
     const dispatch = useDispatch();

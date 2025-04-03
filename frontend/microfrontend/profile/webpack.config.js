@@ -6,6 +6,7 @@ const path = require('path');
 module.exports = {
   output: {
     publicPath: "http://localhost:8082/",
+    assetModuleFilename: 'assets/[hash][ext][query]'
   },
 
   resolve: {
@@ -38,7 +39,20 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        use: ['@svgr/webpack', 'url-loader'],
+        oneOf: [
+          {
+            // Для импорта SVG как React компонентов
+            resourceQuery: /react/, // если имя файла содержит ?react
+            use: ['@svgr/webpack'],
+          },
+          {
+            // Для использования SVG как URL в CSS
+            type: 'asset/resource',
+            generator: {
+              filename: 'images/[hash][ext][query]'
+            }
+          },
+        ],
       },
     ],
   },

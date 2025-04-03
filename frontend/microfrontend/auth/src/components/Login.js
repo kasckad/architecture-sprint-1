@@ -4,6 +4,7 @@ import '../blocks/login/login.css';
 import * as auth from '../utils/auth.js';
 import {useHistory} from "react-router-dom";
 import { useDispatch } from 'react-redux';
+import '../blocks/auth-form/auth-form.css'
 
 function Login (){
   const [email, setEmail] = React.useState('');

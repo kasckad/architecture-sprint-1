@@ -112,6 +112,7 @@ function App() {
 
     return (
             <div className="page__content">
+                <div>{selectedCard? selectedCard.link: 'Пусто!'}</div>
                 <Header email={email} onSignOut={onSignOut}/>
                 <Switch>
                     <ProtectedRoute

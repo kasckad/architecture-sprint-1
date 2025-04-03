@@ -50,16 +50,29 @@ function rootReducer(state = initialState, action) {
                 isAddPlacePopupOpen: false,
                 isEditAvatarPopupOpen: false,
                 isImagePopupOpen: false,
-                isInfoToolTipOpen: false
+                isInfoToolTipOpen: false,
+                selectedCard: null
             };
         default:
             return state;
     }
 }
 
-// Создаем store
+// Создаем middleware для логгирования
+const logger = store => next => action => {
+    console.log('предыдущее состояние:', store.getState());
+    console.log('действие:', action);
+
+    const result = next(action);
+
+    console.log('новое состояние:', store.getState());
+    return result;
+};
+
+// Создаем store с middleware
 const store = createStore(
-    rootReducer
+    rootReducer,
+    applyMiddleware(logger)
 );
 
 export default store;
