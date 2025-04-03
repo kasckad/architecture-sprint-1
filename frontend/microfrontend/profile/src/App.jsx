@@ -1,0 +1,15 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+import "./index.css";
+import ProfileControl from "./components/ProfileControl";
+
+const App = () => (
+  <div className="container">
+    <div>Name: profile</div>
+    <div>Framework: react</div>
+    <div>Language: JavaScript</div>
+    <div>CSS: Empty CSS</div>
+  </div>
+);
+ReactDOM.render(<App />, document.getElementById("app"));
